@@ -1,3 +1,11 @@
+
+#### bash/Linux
+# seqkit grep -s -i -p AACGAACTTCTCCTGCTAGAAT gisaid_RMD.fasta > ChinaCDC-N-F-AAC.fasta
+# seqkit grep -s -i -p AACGAACTTCTCCTGCTAGAAT gisaid_hcov-19_2020_04_30_06.fasta -v  > ChinaCDC-N-F-not-AAC.fasta
+# grep "^>" Gisaid_RMD.fasta | cut -d '|' -f 1| cut -d '/' -f 2 -> country-infor.txt
+# grep "^>" ChinaCDC-N-F-AAC.fasta | cut -d '|' -f 1| cut -d '/' -f 2 -> AAC-country-infor.txt
+#####################################
+
 library(tidyverse)
 options(stringsAsFactors = F)
 
